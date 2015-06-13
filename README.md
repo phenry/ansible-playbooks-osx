@@ -1,6 +1,14 @@
 starter
 =======
 
+Usage:
+`ansible-playbook -v workstation.yml`
+
+Fork from: [osxc](https://github.com/osxc)
+
+
+---
+
 An osxc playbook, ready to be forked !
 
 
@@ -33,3 +41,9 @@ Now you're ready to further tweak the configuration we gave you. Have fun ! (You
 ## Learn More
 
 If you want to get more documentation or just want to see what osxc can do for you, here's a [repository list on ansible galaxy](https://galaxy.ansible.com/list#/users/6499) where you can find all the publicly available roles for osxc.
+
+## See also
+
+  - [Battleschool](http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool) is a more general solution than what I've built here. (It may be a better option if you don't want to fork this repo and hack it for your own workstation...). https://github.com/spencergibb/battleschool | https://github.com/spencergibb/ansible-osx | https://db.tt/VcyI9dvr
+  - [osxc](https://github.com/osxc) is another more general solution, set up so you can fork the [xc-custom](https://github.com/osxc/xc-custom) repo and get your own local environment bootstrapped quickly.
+  - [Mac Development Ansible Playbook](https://github.com/geerlingguy/mac-dev-playbook)
