@@ -33,4 +33,8 @@
   - name: Disable Guest account
     # http://superuser.com/questions/597338/how-to-enable-allow-guest-account-to-log-in-to-this-computer-option-on-mac-os
     # Note: If you use Apple’s disk-encryption system, FileVault, the Guest user can only access Safari.
-    command: sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
+    command: sudo defaults write com.apple.loginwindow GuestEnabled -boolean false
+
+  - name: Show all files in Finder
+    # http://blog.bertvanlangen.com/articles/toggle-hidden-files-finder-os-x-10-10-yosemite/
+    command: defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder
