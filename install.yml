@@ -114,13 +114,13 @@
     homebrew: name=brew-cask state=latest update_homebrew=yes
     when: cask_installed.stat.exists == false
   
-  - name: add new cask opts to .zshenv
-    lineinfile: dest='~/.zshenv'
-                regexp='^export HOMEBREW_CASK_OPTS'
-                line='export HOMEBREW_CASK_OPTS="--appdir=/Applications"'
-                state=present
+#  - name: add new cask opts to .zshenv
+#    lineinfile: dest='~/.zshenv'
+#                regexp='^export HOMEBREW_CASK_OPTS'
+#                line='export HOMEBREW_CASK_OPTS="--appdir=/Applications"'
+#                state=present
 
-     
+
   - name: install apps from homebrew cask
     #command: brew-cask install iterm2
     homebrew_cask: name={{ item }}
