@@ -2,7 +2,7 @@ starter
 =======
 
 Usage:
-`ansible-playbook -v workstation.yml`
+`ansible-playbook -v playbooks/workstation.yml`
 
 Fork from: [osxc](https://github.com/osxc)
 
